@@ -1,0 +1,151 @@
+[{
+        "_id": "Calls-AH-lost-calls",
+        "_type": "search",
+        "_source": {
+            "title": "Calls - AH lost calls",
+            "description": "",
+            "hits": 0,
+            "columns": [
+                "message"
+            ],
+            "sort": [
+                "@timestamp",
+                "desc"
+            ],
+            "version": 1,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"index\":\"581ad3c0-5730-11e8-86d6-7582cab54e0d\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[{\"meta\":{\"disabled\":false,\"index\":\"smdr*\",\"key\":\"DialledNumber\",\"negate\":true,\"value\":\"13450063\"},\"query\":{\"match\":{\"DialledNumber\":{\"query\":\"13450063\",\"type\":\"phrase\"}}}}],\"query\":{\"query\":{\"query_string\":{\"query\":\"((CallHourLocal:[1 TO 7] && Continuation:0) || (CallHourLocal:[17 TO 24] && Continuation:0)) && TotalCallTimeSecs:0 && Direction:I\",\"analyze_wildcard\":true}},\"language\":\"lucene\"}}"
+            }
+        }
+    },
+    {
+        "_id": "Calls-before-0800",
+        "_type": "search",
+        "_source": {
+            "title": "Calls before 0800",
+            "description": "",
+            "hits": 0,
+            "columns": [
+                "Continuation",
+                "CallHourLocal"
+            ],
+            "sort": [
+                "@timestamp",
+                "desc"
+            ],
+            "version": 1,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"index\":\"581ad3c0-5730-11e8-86d6-7582cab54e0d\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query\":{\"query_string\":{\"query\":\"CallHourLocal:[1 TO 7] && Continuation:0\",\"analyze_wildcard\":true}},\"language\":\"lucene\"}}"
+            }
+        }
+    },
+    {
+        "_id": "calls-AH-Support",
+        "_type": "search",
+        "_source": {
+            "title": "calls - AH Support",
+            "description": "",
+            "hits": 0,
+            "columns": [
+                "_source"
+            ],
+            "sort": [
+                "@timestamp",
+                "desc"
+            ],
+            "version": 1,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"index\":\"581ad3c0-5730-11e8-86d6-7582cab54e0d\",\"query\":{\"query\":{\"query_string\":{\"query\":\"DialledNumber:0427423430\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[]}"
+            }
+        }
+    },
+    {
+        "_id": "Calls-Early-ampersand-Late",
+        "_type": "search",
+        "_source": {
+            "title": "Calls Early & Late",
+            "description": "",
+            "hits": 0,
+            "columns": [
+                "message",
+                "TotalCallTimeMins"
+            ],
+            "sort": [
+                "@timestamp",
+                "desc"
+            ],
+            "version": 1,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"index\":\"581ad3c0-5730-11e8-86d6-7582cab54e0d\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"filter\":[{\"meta\":{\"disabled\":false,\"index\":\"smdr*\",\"key\":\"DialledNumber\",\"negate\":true,\"value\":\"13450063\",\"alias\":null},\"query\":{\"match\":{\"DialledNumber\":{\"query\":\"13450063\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":{\"query_string\":{\"query\":\"(CallHourLocal:[1 TO 7] && Continuation:0) || (CallHourLocal:[17 TO 24] && Continuation:0)\",\"analyze_wildcard\":true}},\"language\":\"lucene\"}}"
+            }
+        }
+    },
+    {
+        "_id": "Unique-Calls",
+        "_type": "search",
+        "_source": {
+            "title": "Unique Calls",
+            "description": "",
+            "hits": 0,
+            "columns": [
+                "Party1Name",
+                "CalledNumber",
+                "Direction",
+                "ConnectedTime",
+                "RingTime",
+                "HoldTime",
+                "ParkTime",
+                "TotalCallTimeSecs"
+            ],
+            "sort": [
+                "@timestamp",
+                "desc"
+            ],
+            "version": 1,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"index\":\"581ad3c0-5730-11e8-86d6-7582cab54e0d\",\"query\":{\"query\":{\"query_string\":{\"query\":\"Continuation:0\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"filter\":[]}"
+            }
+        }
+    },
+    {
+        "_id": "028112e0-2651-11e8-9aaf-9f2c9d837816",
+        "_type": "search",
+        "_source": {
+            "title": "Missed Calls",
+            "description": "",
+            "hits": 0,
+            "columns": [
+                "_source"
+            ],
+            "sort": [
+                "@timestamp",
+                "desc"
+            ],
+            "version": 1,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"index\":\"581ad3c0-5730-11e8-86d6-7582cab54e0d\",\"highlightAll\":true,\"filter\":[],\"query\":{\"query\":{\"query_string\":{\"query\":\"\\\"VM Channel 43\\\"\",\"analyze_wildcard\":true}},\"language\":\"lucene\"}}"
+            }
+        }
+    },
+    {
+        "_id": "9e46fe70-22b1-11ea-9ba3-f3daa06ef125",
+        "_type": "search",
+        "_source": {
+            "title": "Calls - BH lost calls",
+            "description": "",
+            "hits": 0,
+            "columns": [
+                "message",
+                "ConnectedTime"
+            ],
+            "sort": [
+                "@timestamp",
+                "desc"
+            ],
+            "version": 1,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"index\":\"581ad3c0-5730-11e8-86d6-7582cab54e0d\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[{\"meta\":{\"disabled\":false,\"index\":\"smdr*\",\"key\":\"DialledNumber\",\"negate\":true,\"value\":\"13450063\",\"type\":\"phrase\",\"params\":{\"query\":\"13450063\",\"type\":\"phrase\"},\"alias\":null},\"query\":{\"match\":{\"DialledNumber\":{\"query\":\"13450063\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"negate\":false,\"index\":\"581ad3c0-5730-11e8-86d6-7582cab54e0d\",\"type\":\"phrase\",\"key\":\"ConnectedTime\",\"value\":\"00:00:00\",\"params\":{\"query\":\"00:00:00\",\"type\":\"phrase\"},\"disabled\":false,\"alias\":null},\"query\":{\"match\":{\"ConnectedTime\":{\"query\":\"00:00:00\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"CallHourLocal:[7 TO 17] && Continuation:0 && Direction:I\",\"language\":\"lucene\"},\"highlightAll\":true,\"version\":true}"
+            }
+        }
+    }
+]
