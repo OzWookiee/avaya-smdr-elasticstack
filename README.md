@@ -6,3 +6,5 @@ This is an [elasticstack][elasticstack] setup for pulling SMDR call records from
 [kibana]: <https://www.elastic.co/products/kibana>
 [elasticsearch]: <https://www.elastic.co/products/enterprise-search>
 [elasticstack]: <https://www.elastic.co/products/elastic-stack>
+
+Each file should be well documented, but if not please feel free to reach out here by raising an issue.
