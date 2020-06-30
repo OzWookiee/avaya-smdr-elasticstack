@@ -1,318 +1,256 @@
 {
-    "mapping": {
-        "doc": {
-            "properties": {
-                "@timestamp": {
-                    "type": "date"
-                },
-                "@version": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "AmountAtLastUserCharge": {
-                    "type": "float"
-                },
-                "CallCharge": {
-                    "type": "float"
-                },
-                "CallHourLocal": {
-                    "type": "long"
-                },
-                "CallID": {
-                    "type": "long"
-                },
-                "CallID_called_extention": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "CallID_caller_extention": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "CallUnits": {
-                    "type": "long"
-                },
-                "CalledNumber": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "Caller": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "ConnectedTime": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "Continuation": {
-                    "type": "long"
-                },
-                "CostPerUnit": {
-                    "type": "long"
-                },
-                "DayNameLocal": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "DayNumLocal": {
-                    "type": "long"
-                },
-                "DialledNumber": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "Direction": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "ExternalTargetedNumber": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "ExternalTargeterID": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "ExternalTargetingCause": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "HoldTime": {
-                    "type": "long"
-                },
-                "IsInternal": {
-                    "type": "long"
-                },
-                "Markup": {
-                    "type": "float"
-                },
-                "ParkTime": {
-                    "type": "long"
-                },
-                "Part1Device": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "Party1Name": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "Party2Device": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "Party2Name": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "RingTime": {
-                    "type": "long"
-                },
-                "TargetedBy": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "TargetedBy_label": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "TotalCallTimeMins": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "TotalCallTimeSecs": {
-                    "type": "long"
-                },
-                "UTC_time": {
-                    "type": "date",
-                    "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd||epoch_millis"
-                },
-                "UnitsAtLastUserCharge": {
-                    "type": "long"
-                },
-                "UserCharged": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "call_type": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "host": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "lstimestamp": {
-                    "type": "date"
-                },
-                "message": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "port": {
-                    "type": "long"
-                },
-                "server_ip_called_extention": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "server_ip_caller_extention": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "tags": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "type": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
-                "username": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                }
+  "mapping": {
+    "_doc": {
+      "dynamic": "true",
+      "_meta": {},
+      "_source": {
+        "includes": [],
+        "excludes": []
+      },
+      "dynamic_date_formats": [
+        "strict_date_optional_time",
+        "yyyy/MM/dd HH:mm:ss Z||yyyy/MM/dd Z"
+      ],
+      "dynamic_templates": [],
+      "date_detection": true,
+      "numeric_detection": false,
+      "properties": {
+        "@timestamp": {
+          "type": "date",
+          "format": "strict_date_optional_time"
+        },
+        "@version": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
             }
+          }
+        },
+        "Account": {
+          "type": "text",
+          "index": false
+        },
+        "AmountAtLastUserCharge": {
+          "type": "float",
+          "index": false,
+          "ignore_malformed": false,
+          "coerce": true
+        },
+        "AuthCode": {
+          "type": "text",
+          "index": false
+        },
+        "AuthValid": {
+          "type": "text",
+          "index": false
+        },
+        "CallCharge": {
+          "type": "float",
+          "index": false,
+          "ignore_malformed": false,
+          "coerce": true
+        },
+        "CallHourLocal": {
+          "type": "short",
+          "ignore_malformed": false,
+          "coerce": true
+        },
+        "CallID": {
+          "type": "integer"
+        },
+        "CallID_called_extention": {
+          "type": "text",
+          "index": false
+        },
+        "CallID_caller_extention": {
+          "type": "text",
+          "index": false
+        },
+        "CallStart": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "CallType": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "CallUnits": {
+          "type": "integer",
+          "index": false,
+          "ignore_malformed": false,
+          "coerce": true
+        },
+        "CalledNumber": {
+          "type": "keyword"
+        },
+        "Caller": {
+          "type": "keyword"
+        },
+        "ConnectedTime": {
+          "type": "date",
+          "ignore_malformed": false,
+          "format": "hour_minute_second"
+        },
+        "Continuation": {
+          "type": "short"
+        },
+        "CostPerUnit": {
+          "type": "short",
+          "index": false,
+          "ignore_malformed": false,
+          "coerce": true
+        },
+        "Currency": {
+          "type": "text",
+          "index": false
+        },
+        "DayNameLocal": {
+          "type": "keyword"
+        },
+        "DayNumLocal": {
+          "type": "integer"
+        },
+        "Department": {
+          "type": "keyword",
+          "index_options": "freqs"
+        },
+        "DialledNumber": {
+          "type": "keyword"
+        },
+        "Direction": {
+          "type": "keyword",
+          "norms": true
+        },
+        "ExternalTargetedNumber": {
+          "type": "text",
+          "index_options": "docs"
+        },
+        "ExternalTargeterID": {
+          "type": "text",
+          "index_options": "docs"
+        },
+        "ExternalTargetingCause": {
+          "type": "text",
+          "index_options": "docs"
+        },
+        "HoldTime": {
+          "type": "short",
+          "ignore_malformed": false,
+          "coerce": true
+        },
+        "IsInternal": {
+          "type": "short",
+          "ignore_malformed": false,
+          "coerce": true
+        },
+        "Markup": {
+          "type": "text",
+          "index": false
+        },
+        "ParkTime": {
+          "type": "short",
+          "ignore_malformed": false,
+          "coerce": true
+        },
+        "Part1Device": {
+          "type": "keyword"
+        },
+        "Party1Device": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "Party1Name": {
+          "type": "keyword"
+        },
+        "Party2Device": {
+          "type": "keyword"
+        },
+        "Party2Name": {
+          "type": "keyword"
+        },
+        "RingTime": {
+          "type": "short",
+          "ignore_malformed": false,
+          "coerce": true
+        },
+        "TargetedBy": {
+          "type": "keyword"
+        },
+        "TargetedBy_label": {
+          "type": "keyword"
+        },
+        "TotalCallTimeSecs": {
+          "type": "integer",
+          "ignore_malformed": false,
+          "coerce": true,
+          "null_value": 0
+        },
+        "UTC_time": {
+          "type": "date",
+          "index": false,
+          "ignore_malformed": false
+        },
+        "UnitsAtLastUserCharge": {
+          "type": "text",
+          "index": false
+        },
+        "UserCharged": {
+          "type": "text",
+          "index": false
+        },
+        "host": {
+          "type": "keyword"
+        },
+        "lstimestamp": {
+          "type": "date",
+          "index": false,
+          "ignore_malformed": false
+        },
+        "message": {
+          "type": "text",
+          "index": false
+        },
+        "port": {
+          "type": "short",
+          "ignore_malformed": false,
+          "coerce": true
+        },
+        "server_ip_called_extention": {
+          "type": "ip"
+        },
+        "server_ip_caller_extention": {
+          "type": "ip"
+        },
+        "type": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "username": {
+          "type": "keyword"
         }
+      }
     }
+  }
 }
